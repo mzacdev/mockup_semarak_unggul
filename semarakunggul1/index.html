@@ -90,7 +90,7 @@
 
         .hero-section {
             background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
-                        url('/servis_hantarkereta/semarakunggul1/assets/images/cover1.png');
+                        url('/assets/images/cover1.png');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -2485,17 +2485,22 @@
             // WhatsApp number
             const whatsappNumber = '60183292985';
 
-            // Create WhatsApp Web URL
-            const whatsappUrl = `https://web.whatsapp.com/send?phone=${whatsappNumber}&text=${message}`;
+            // Check if user is on a mobile device (using a simple user agent check)
+            const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
-            // Open WhatsApp Web in new tab
+            // If on mobile, open wa.me (WhatsApp app) else open WhatsApp Web (web.whatsapp.com)
+            const whatsappUrl = isMobile
+                ? `https://wa.me/${whatsappNumber}?text=${message}`
+                : `https://web.whatsapp.com/send?phone=${whatsappNumber}&text=${message}`;
+
+            // Open the link in a new tab
             window.open(whatsappUrl, '_blank');
 
             // Optional: Reset form
             document.getElementById('quoteForm').reset();
 
             // Optional: Show success message
-            alert('Terima kasih! Sila lengkapkan permintaan anda melalui WhatsApp Web.');
+            alert('Terima kasih! Sila lengkapkan permintaan anda melalui WhatsApp.');
         }
 
         // Add phone number formatting
