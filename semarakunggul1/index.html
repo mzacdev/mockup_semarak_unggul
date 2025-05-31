@@ -85,15 +85,17 @@
 
         .hero-section {
             background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
-                        url('assets/images/cover1.png');
+                        url('/servis_hantarkereta/semarakunggul1/assets/images/cover1.png');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
+            background-repeat: no-repeat;
             color: white;
             padding: 180px 0;
             text-align: center;
             position: relative;
             clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            min-height: 600px;
         }
 
         .hero-badge {
@@ -245,29 +247,28 @@
         }
 
         .testimonial-card {
-            background: #ffffff !important;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-            margin: 20px 0;
-            position: relative;
-            border: 1px solid rgba(0,0,0,0.05) !important;
+            padding: 15px;
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
         }
 
-        .testimonial-card::before {
-            content: '"';
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            font-size: 4rem;
-            color: var(--primary-color);
-            opacity: 0.1;
-            font-family: serif;
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .testimonial-card img {
+            display: block;
+            margin: 0 auto;
         }
 
         .contact-section {
             padding: 120px 0;
-            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%) !important;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%), url('assets/images/map.png') center center/cover no-repeat;
+            background-blend-mode: lighten;
             position: relative;
         }
 
@@ -627,7 +628,7 @@
         <div class="container">
             <span class="hero-badge">SEMENANJUNG | SABAH | SARAWAK</span>
             <h1 class="hero-title">HANTAR KERETA KE SELURUH MALAYSIA</h1>
-            <p class="lead mb-4">Roll On/ Roll Off • Forwarding • Personal Effect</p>
+            <p class="lead mb-4">Roll On/ Roll Off • Forwarding • Barangan Peribadi</p>
             <div>
                 <a href="#sebutharga" class="cta-button">Dapatkan Sebutharga</a>
                 <a href="https://wa.me/60183292985" class="cta-button outline">WhatsApp Kami</a>
@@ -661,7 +662,7 @@
                 <div class="col-md-4 mb-4">
                     <div class="feature-card">
                         <i class="fas fa-box feature-icon"></i>
-                        <h3>Personal Effect</h3>
+                        <h3>Barangan Peribadi</h3>
                         <p>Penghantaran barangan peribadi dan peralatan rumah dengan selamat</p>
                     </div>
                 </div>
@@ -780,36 +781,38 @@
     <!-- Clients Section -->
     <section class="clients-section py-5 bg-light" data-aos="fade-up">
         <div class="container">
-            <h2 class="text-center mb-5">Pelanggan Kami</h2>
             <div class="row align-items-center justify-content-center">
                 <div class="col-6 col-md-2 mb-4 text-center">
-                    <img src="assets/logo/PETRONAS_Logo_(2013).png" alt="Petronas" class="img-fluid client-logo" style="max-height: 60px; filter: grayscale(100%); opacity: 0.7;">
+                    <img src="assets/logo/proton.png" alt="Proton" class="img-fluid client-logo" style="max-height: 60px; filter: grayscale(100%); opacity: 0.7;">
                 </div>
                 <div class="col-6 col-md-2 mb-4 text-center">
-                    <img src="assets/logo/maybank.png" alt="Maybank" class="img-fluid client-logo" style="max-height: 60px; filter: grayscale(100%); opacity: 0.7;">
+                    <img src="assets/logo/perodua.png" alt="Perodua" class="img-fluid client-logo" style="max-height: 60px; filter: grayscale(100%); opacity: 0.7;">
                 </div>
                 <div class="col-6 col-md-2 mb-4 text-center">
-                    <img src="assets/logo/tnb.png" alt="Tenaga Nasional" class="img-fluid client-logo" style="max-height: 60px; filter: grayscale(100%); opacity: 0.7;">
+                    <img src="assets/logo/toyota.png" alt="Toyota" class="img-fluid client-logo" style="max-height: 60px; filter: grayscale(100%); opacity: 0.7;">
                 </div>
                 <div class="col-6 col-md-2 mb-4 text-center">
-                    <img src="assets/logo/airasia.png" alt="AirAsia" class="img-fluid client-logo" style="max-height: 60px; filter: grayscale(100%); opacity: 0.7;">
+                    <img src="assets/logo/honda.png" alt="Honda" class="img-fluid client-logo" style="max-height: 60px; filter: grayscale(100%); opacity: 0.7;">
                 </div>
                 <div class="col-6 col-md-2 mb-4 text-center">
-                    <img src="assets/logo/celcomdigi.png" alt="Celcom Digi" class="img-fluid client-logo" style="max-height: 60px; filter: grayscale(100%); opacity: 0.7;">
-                </div>
-                <div class="col-6 col-md-2 mb-4 text-center">
-                    <img src="assets/logo/maxis.png" alt="Maxis" class="img-fluid client-logo" style="max-height: 60px; filter: grayscale(100%); opacity: 0.7;">
+                    <img src="assets/logo/nissan.png" alt="Nissan" class="img-fluid client-logo" style="max-height: 60px; filter: grayscale(100%); opacity: 0.7;">
                 </div>
             </div>
             <div class="row align-items-center justify-content-center mt-4">
                 <div class="col-6 col-md-2 mb-4 text-center">
-                    <img src="assets/logo/axiata.png" alt="Axiata" class="img-fluid client-logo" style="max-height: 60px; filter: grayscale(100%); opacity: 0.7;">
+                    <img src="assets/logo/mazda.png" alt="Mazda" class="img-fluid client-logo" style="max-height: 60px; filter: grayscale(100%); opacity: 0.7;">
                 </div>
                 <div class="col-6 col-md-2 mb-4 text-center">
-                    <img src="assets/logo/simedarby.jpeg" alt="Sime Darby" class="img-fluid client-logo" style="max-height: 60px; filter: grayscale(100%); opacity: 0.7;">
+                    <img src="assets/logo/mercs.png" alt="Mercedes-Benz" class="img-fluid client-logo" style="max-height: 60px; filter: grayscale(100%); opacity: 0.7;">
                 </div>
                 <div class="col-6 col-md-2 mb-4 text-center">
-                    <img src="assets/logo/genting.png" alt="Genting" class="img-fluid client-logo" style="max-height: 60px; filter: grayscale(100%); opacity: 0.7;">
+                    <img src="assets/logo/bmw.png" alt="BMW" class="img-fluid client-logo" style="max-height: 60px; filter: grayscale(100%); opacity: 0.7;">
+                </div>
+                <div class="col-6 col-md-2 mb-4 text-center">
+                    <img src="assets/logo/hyundai.png" alt="Hyundai" class="img-fluid client-logo" style="max-height: 60px; filter: grayscale(100%); opacity: 0.7;">
+                </div>
+                <div class="col-6 col-md-2 mb-4 text-center">
+                    <img src="assets/logo/kia.png" alt="Kia" class="img-fluid client-logo" style="max-height: 60px; filter: grayscale(100%); opacity: 0.7;">
                 </div>
             </div>
         </div>
@@ -855,38 +858,17 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="testimonial-card">
-                        <div class="d-flex align-items-center mb-3">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=faces" class="rounded-circle me-3" alt="Ahmad Zulkarnain" style="width: 50px; height: 50px; object-fit: cover;">
-                            <div>
-                                <h5 class="mb-0">Ahmad Zulkarnain</h5>
-                                <small>Kuala Lumpur ke Kota Kinabalu</small>
-                            </div>
-                        </div>
-                        <p>"Perkhidmatan yang sangat profesional. Kereta saya sampai dengan selamat dan tepat pada masanya."</p>
+                        <img src="assets/review/1.PNG" class="img-fluid" style="width: 100%; height: auto; object-fit: contain; border-radius: 10px;">
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="testimonial-card">
-                        <div class="d-flex align-items-center mb-3">
-                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=faces" class="rounded-circle me-3" alt="Sarah Lim" style="width: 50px; height: 50px; object-fit: cover;">
-                            <div>
-                                <h5 class="mb-0">Sarah Lim</h5>
-                                <small>Johor Bahru ke Kuching</small>
-                            </div>
-                        </div>
-                        <p>"Harga berpatutan dan perkhidmatan yang cekap. Sangat berpuas hati dengan komunikasi yang jelas."</p>
+                        <img src="assets/review/2.PNG" class="img-fluid" style="width: 100%; height: auto; object-fit: contain; border-radius: 10px;">
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="testimonial-card">
-                        <div class="d-flex align-items-center mb-3">
-                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=faces" class="rounded-circle me-3" alt="Raj Kumar" style="width: 50px; height: 50px; object-fit: cover;">
-                            <div>
-                                <h5 class="mb-0">Raj Kumar</h5>
-                                <small>Penang ke Sandakan</small>
-                            </div>
-                        </div>
-                        <p>"Sistem tracking yang bagus dan komunikasi yang jelas sepanjang penghantaran."</p>
+                        <img src="assets/review/3.PNG" class="img-fluid" style="width: 100%; height: auto; object-fit: contain; border-radius: 10px;">
                     </div>
                 </div>
             </div>
